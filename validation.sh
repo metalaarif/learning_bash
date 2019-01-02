@@ -15,9 +15,10 @@
 #	echo "Password: $3"
 #fi
 
-read -p "Enter animal name: " a
+read -p "Enter animal name [Donkey]: " a
 while [[ -z "$a" ]]
 do
-	read -p "You better answer me bastard! " a
+	a="Donkey"	# this way if user doesn't type default value will be chosen which is "Donkey"
+#	read -p "You better answer me bastard! " a
 done
 echo "$a was selected"
